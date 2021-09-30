@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Quest : MonoBehaviour
+public class Quest2 : MonoBehaviour
 {
-    public static Quest instance;
+    public static Quest2 instance;
     [SerializeField]
     bool showObjective = false;
     [SerializeField]
@@ -22,10 +22,10 @@ public class Quest : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && showObjective == false && collision == 0)
             showObjective = true;
-        if(GameObject.FindGameObjectWithTag("questcheck").GetComponent<Goal>().CallRecieved)
+        /*if (GameObject.FindGameObjectWithTag("questcheck").GetComponent<Goal>().CallRecieved)
         {
-            FadeManager.instance.FadeOutToScene(2);
-        }
+            FadeManager.instance.FadeOutToScene(3);
+        }*/
     }
     void OnTriggerExit(Collider other)
     {
@@ -41,7 +41,7 @@ public class Quest : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButton("ShowObj") && collision == 1 &&!ObjectiveDone)
+        if (Input.GetButton("ShowObj") && collision == 1 && !ObjectiveDone)
         {
             showObjective = true;
         }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - metal
   - QUEST
+  - questcheck
   layers:
   - Default
   - TransparentFX
