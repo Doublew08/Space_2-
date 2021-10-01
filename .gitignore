@@ -35,3 +35,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Space Quest 2021/ProjectSettings/Packages/com.unity.probuilder/Settings.json
+Space Quest 2021/ProjectSettings/XRSettings.asset
