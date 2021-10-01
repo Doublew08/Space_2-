@@ -85,7 +85,7 @@ private float climbDownThreshold = -0.4f;
             m_NextStep = m_StepCycle/2f;
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
-			m_MouseLook.Init(transform , m_Camera.transform);
+			m_MouseLook.Init(m_Camera.transform,transform);
 			rigidbody = this.GetComponent<Rigidbody>();
 			m_onLadder = false;
 			useLadder = true;
@@ -283,7 +283,7 @@ private float climbDownThreshold = -0.4f;
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            m_MouseLook.LookRotation (m_Camera.transform,transform);
         }
 
 

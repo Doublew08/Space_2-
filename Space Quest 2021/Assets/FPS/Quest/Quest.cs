@@ -22,7 +22,7 @@ public class Quest : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && showObjective == false && collision == 0)
             showObjective = true;
-        if(GameObject.FindGameObjectWithTag("questcheck").GetComponent<Goal>().CallRecieved)
+        if(GameObject.Find("Quest1 (1)").GetComponent<Goal>().CallRecieved)
         {
             FadeManager.instance.FadeOutToScene(2);
         }
