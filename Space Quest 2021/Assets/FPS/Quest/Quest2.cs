@@ -12,6 +12,7 @@ public class Quest2 : MonoBehaviour
     private int collision;
     public bool ObjectiveDone;
     public bool MissionSucceeded = false;
+    public int Roomtomove;
 
     void Start()
     {
@@ -22,10 +23,10 @@ public class Quest2 : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && showObjective == false && collision == 0)
             showObjective = true;
-        /*if (GameObject.FindGameObjectWithTag("questcheck").GetComponent<Goal>().CallRecieved)
+        if (MissionSucceeded)
         {
-            FadeManager.instance.FadeOutToScene(3);
-        }*/
+            GameObject.Find("FadeManager").GetComponent<FadeManager>().FadeOutToScene(Roomtomove);
+        }
     }
     void OnTriggerExit(Collider other)
     {
@@ -48,6 +49,10 @@ public class Quest2 : MonoBehaviour
         if (Input.GetButtonUp("ShowObj") && collision == 1)
         {
             showObjective = false;
+        }
+        if(GameObject.Find("Quest1 (1)").GetComponent<QuestCollectFuel>().ObjectiveDone)
+        {
+            MissionSucceeded = true;
         }
     }
 }
