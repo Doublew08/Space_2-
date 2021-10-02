@@ -332,6 +332,7 @@ Transform:
   - {fileID: 1239048838}
   - {fileID: 1697111999}
   - {fileID: 514970002}
+  - {fileID: 221695768}
   - {fileID: 306760487}
   - {fileID: 951718197}
   - {fileID: 1305588208}
@@ -361,7 +362,6 @@ Transform:
   - {fileID: 543174734}
   - {fileID: 1638101917}
   - {fileID: 1854477247}
-  - {fileID: 221695768}
   - {fileID: 1675259854}
   - {fileID: 1706266307}
   - {fileID: 1448399733}
@@ -1187,7 +1187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 55789025}
-  m_RootOrder: 50
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!215 &221695769
 ReflectionProbe:
@@ -2236,6 +2236,7 @@ GameObject:
   - component: {fileID: 449936876}
   - component: {fileID: 449936878}
   - component: {fileID: 449936877}
+  - component: {fileID: 449936879}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2259,8 +2260,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -1659}
+  m_SizeDelta: {x: 0, y: 1998.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &449936877
 MonoBehaviour:
@@ -2301,10 +2302,10 @@ MonoBehaviour:
     its neighbors that scientists classified it as a dwarf planet in 2006.\n\n\nCeres
     does not have any moons or Rings.\n\nCeres is also the first Dwarf Planet to
     be Visited by SpaceCraft.\n\n\nScientists would like to search for possible signs
-    of life on Ceres. It has something many other planets don't: water.\nYou were
-    playing as a Robot which was his mission is to Discover some properties of the
-    Planets and then go out of fuel and remain on the planet because the Cost of
-    bringing it isn't worth it.\nThanks For Playing.\nBy Space technicians "
+    of life on Ceres. It has something many other planets don't: water.\n\n\n\nYou
+    were playing as a Robot which was his mission is to Discover some properties
+    of Ceres and then go out of fuel and remain on the planet because the Cost of
+    bringing it isn't worth it.\n\n\n\n\nThanks For Playing.\nBy Space technicians "
 --- !u!222 &449936878
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2313,6 +2314,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449936875}
   m_CullTransparentMesh: 0
+--- !u!95 &449936879
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449936875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31546c2e26f87594698c7a185345c0c0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &453439496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 410b77b7834325141a837c9830317158,
@@ -3461,7 +3481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: f0db251dc5cb71b41859d500186472ae, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
