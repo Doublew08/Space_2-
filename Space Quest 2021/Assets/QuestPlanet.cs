@@ -34,8 +34,8 @@ public class QuestPlanet : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                Capsule.SetActive(true);
-                 time = Time.time;
+                showObjective = false;
+                StartCoroutine(Time());
             }
         }
     }
@@ -61,13 +61,18 @@ public class QuestPlanet : MonoBehaviour
         {
             showObjective = false;
         }
-        if(time > 3)
-        {
-            Credits.SetActive(true);
-        }
-        if(time > 60)
-        {
-            Application.Quit(); 
-        }
+       
+
+    }
+    IEnumerator Time()
+    {
+        Capsule.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        Credits.SetActive(true);
+        yield return new WaitForSeconds(60f);
+        Application.Quit();
+
+
+
     }
 }
