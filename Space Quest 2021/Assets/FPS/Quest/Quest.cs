@@ -11,7 +11,7 @@ public class Quest : MonoBehaviour
     [SerializeField]
     private int collision;
     public bool ObjectiveDone;
-   // public bool MissionSucceeded = false;
+    public bool MissionSucceeded = false;
 
     void Start()
     {
