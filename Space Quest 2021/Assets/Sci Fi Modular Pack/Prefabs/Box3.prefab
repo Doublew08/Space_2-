@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 474182717338814900}
   - component: {fileID: 730041026486899369}
   - component: {fileID: 1657742885903426673}
+  - component: {fileID: 3919874803877925102}
+  - component: {fileID: 3713554743494762316}
   m_Layer: 0
   m_Name: Box3
   m_TagString: Untagged
@@ -93,3 +95,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.832, y: 0.6496, z: 0.67200005}
   m_Center: {x: 0, y: 0.004799977, z: 0.015999988}
+--- !u!65 &3919874803877925102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866197311699743921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6275489, y: 0.9674368, z: 1.3255882}
+  m_Center: {x: 0.022205561, y: 0.016973376, z: -0.0011997223}
+--- !u!114 &3713554743494762316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8866197311699743921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45e6e78c8de20642b77c9feb712ef20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxNum: -1
+  objective: {fileID: 2800000, guid: fd8a3cb4365e9ee41962a055c8585c06, type: 3}
+  FoundFuel: {fileID: 2800000, guid: 83cd2fc1dc14e14469ffc05044ab9a96, type: 3}
+  NotThis: {fileID: 2800000, guid: 6689c8c01c5f5d0449cd9b9782e4de33, type: 3}
