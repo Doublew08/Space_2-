@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/FPS/Scenes/MainScene 2.unity
     guid: 2b64ed0ed18f6f942bd6b6a728895c4a
   - enabled: 1
+    path: Assets/FPS/Scenes/MainScene 3.unity
+    guid: 953b030ba18a2f94cb9e6cd161ce5e3a
+  - enabled: 1
     path: Assets/SCENES/ceres.unity
     guid: 59582ce1afd94744a942f8a78f704128
   m_configObjects: {}

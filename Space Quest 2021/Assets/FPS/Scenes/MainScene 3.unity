@@ -11885,9 +11885,8 @@ GameObject:
   - component: {fileID: 1275045712}
   - component: {fileID: 1275045711}
   - component: {fileID: 1275045710}
-  - component: {fileID: 1275045709}
   - component: {fileID: 1275045715}
-  - component: {fileID: 1275045714}
+  - component: {fileID: 1275045709}
   m_Layer: 0
   m_Name: Quest1 (1)
   m_TagString: QUEST
@@ -11904,10 +11903,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1275045708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45f1e15f4f2ef32448b6acf852f5d2a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 60796956faaa5064a8707a80b3b91f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CallRecieved: 0
+  showObjective: 0
+  objective: {fileID: 2800000, guid: fd8a3cb4365e9ee41962a055c8585c06, type: 3}
+  collision: 0
+  scene: 5
 --- !u!65 &1275045710
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11919,8 +11921,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.676886, y: 0.61554545, z: 0.36453992}
+  m_Center: {x: 0.161557, y: -0.09921408, z: 0.26425838}
 --- !u!23 &1275045711
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11976,27 +11978,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275045708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.68, y: 10.18, z: -7.34}
+  m_LocalPosition: {x: -27.32, y: 10.18, z: -7.34}
   m_LocalScale: {x: 5, y: 5, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1275045714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275045708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289ede5afd3be484dbaea027c6d83a7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SoundToPlay: {fileID: 8300000, guid: afd4b22c49c084240add8b5e1650a358, type: 3}
-  Volume: 5
-  alreadyPlayed: 0
 --- !u!82 &1275045715
 AudioSource:
   m_ObjectHideFlags: 0
