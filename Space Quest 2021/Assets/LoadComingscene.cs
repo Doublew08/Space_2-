@@ -9,7 +9,7 @@ public class LoadComingscene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(Enumerator());
     }
 
     // Update is called once per frame
