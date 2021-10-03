@@ -3507,7 +3507,7 @@ MonoBehaviour:
   collision: 0
   ObjectiveDone: 0
   MissionSucceeded: 0
-  Roomtomove: 3
+  Roomtomove: 4
 --- !u!65 &354923771
 BoxCollider:
   m_ObjectHideFlags: 0
